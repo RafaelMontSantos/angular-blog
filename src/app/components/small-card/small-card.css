@@ -1,0 +1,13 @@
+.container__small-card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.small-card__img{
+    width: 25%;
+    margin: 1rem;
+}
+.author{
+    color: gray;
+}

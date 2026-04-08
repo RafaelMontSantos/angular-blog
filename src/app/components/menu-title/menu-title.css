@@ -1,0 +1,10 @@
+.container__menu-title{
+    margin-top: 10px;
+}
+
+.title{
+    margin: 10px 0;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
