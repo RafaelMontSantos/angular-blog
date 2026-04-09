@@ -1,10 +1,24 @@
-<app-menu-bar></app-menu-bar>
 <app-menu-title></app-menu-title>
 <div class="articles grid-container">
     <article class="articles__primary">
-        <app-big-card></app-big-card>
+        <app-big-card 
+            [Id]="id[0]"
+            [cardImage]="img[0]"
+            [cardTitle]="title[0]"
+            [cardNews]="text[0]"
+        ></app-big-card>
     </article>
     <aside class="aside__others">
-        <app-small-card></app-small-card>
+        @for (item of id; track $index) {
+            @if (id.length > $index) {
+                <app-small-card
+                    [Id]="id[$index + 1]"
+                    [smallCardImg]="img[$index + 1]"
+                    [title]="title[$index + 1]"
+                    [description]="text[$index + 1]"
+                ></app-small-card>
+            }
+        }
+        
     </aside>
 </div>

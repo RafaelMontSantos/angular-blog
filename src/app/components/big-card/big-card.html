@@ -1,7 +1,16 @@
 <div class="container__big-card">
-    <a href="#" class="big-card__link">
-        <img src="https://scontent.fcgh71-1.fna.fbcdn.net/v/t39.30808-6/662634493_940413701927072_8516992319932374554_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=ar0aAnSDjoYQ7kNvwExnzKD&_nc_oc=Adr0wY_39nrF5qaVccF7Kfyme6J46I0c6zYjHdR18yBzqsNom0pG3HomLf-S8dE2ZBL88WMp8Q5zhnbSWoyBDKmu&_nc_zt=23&_nc_ht=scontent.fcgh71-1.fna&_nc_gid=09hoEgcNhM1ZzU_uajLCtQ&_nc_ss=7a3a8&oh=00_Af0lkAwqiULfnAwhxgG1Rs2kwoMb-FoqJohkvMhRf3xL6w&oe=69DB67E8" alt="" class="big-card__picture">
-        <h2 class="big-card__title">News</h2>
-        <p class="big-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sunt nulla laborum esse enim eligendi eveniet. Labore animi, porro architecto totam eligendi vero itaque, recusandae vitae excepturi quo saepe. Adipisci!</p>
+    <a [routerLink]="['content', Id]" 
+        class="big-card__link">
+        <img 
+            [src]="cardImage" 
+            alt="" class="big-card__picture">
+        <h2 
+            [textContent]="cardTitle" 
+            class="big-card__title">
+        </h2>
+        <p 
+            [textContent]="cardNews" 
+            class="big-card__text">
+        </p>
     </a>
 </div>

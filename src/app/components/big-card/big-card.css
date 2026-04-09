@@ -4,13 +4,16 @@
     align-items: flex-start;
     justify-items: center;
     padding: 1rem;
+    margin: 1rem;
 }
 
 .big-card__link{
     text-decoration: none;
 }
 
-.big-card__link:hover{
+.big-card__link:hover,
+.big-card__link:focus,
+.big-card__link:active{
     opacity: .7;
 }
 
